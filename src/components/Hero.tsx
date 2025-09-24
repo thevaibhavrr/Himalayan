@@ -58,7 +58,7 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section
-        className="relative flex flex-col md:flex-row items-center justify-between px-8 md:px-20 pt-32 md:pt-40 min-h-screen"
+        className="relative flex flex-col md:flex-row items-center justify-between px-8 md:px-20 pt-32 md:pt-10 min-h-screen"
         style={{
           backgroundImage:
             "url('https://res.cloudinary.com/dtivafy25/image/upload/v1758021064/Frame_24_wrtcqz.png')",
@@ -89,7 +89,7 @@ export default function HomePage() {
           </a>
         </div>
 
-        <div className="relative z-10 max-w-sm mt-10 md:mt-0">
+        <div className="relative z-10  mt-10 md:mt-0">
           <img
             src="https://i.ibb.co/SqXfTrW/61l62-OYN9-DL-SL1000-removebg-preview.png"
             alt="Mazola Corn Oil"
