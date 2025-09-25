@@ -1,3 +1,4 @@
+import React from 'react';
 import { RouterProvider, Route } from './components/Router';
 import AnnouncementBar from './components/AnnouncementBar';
 import Header from './components/Header';

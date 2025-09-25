@@ -43,56 +43,48 @@ const HomePage = () => {
       <Hero />
 
       {/* About Preview */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <div>
-                <Badge className="bg-[#FFD233] text-[#4B2E2B] mb-4">Since 1978</Badge>
-                <h2 className="text-3xl md:text-4xl text-[#4B2E2B] mb-4">
-                  The Himalayan Oil Story
-                </h2>
-                <p className="text-lg text-[#4B2E2B] opacity-80 mb-6">
-                  Four and a half decades of trust, tradition, and uncompromising quality. 
-                  From our traditional Kolhu extraction methods to modern packaging, we've 
-                  remained committed to delivering the purest edible oils to your family.
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
-                <div className="text-center p-3 sm:p-4 bg-[#FFF8E1] rounded-lg">
-                  <Heart className="w-6 h-6 sm:w-8 sm:h-8 text-[#FFD233] mx-auto mb-2" />
-                  <div className="text-xs sm:text-sm text-[#4B2E2B] opacity-80">Heart Healthy</div>
-                </div>
-                <div className="text-center p-3 sm:p-4 bg-[#FFF8E1] rounded-lg">
-                  <Shield className="w-6 h-6 sm:w-8 sm:h-8 text-[#FFD233] mx-auto mb-2" />
-                  <div className="text-xs sm:text-sm text-[#4B2E2B] opacity-80">100% Pure</div>
-                </div>
-                <div className="text-center p-3 sm:p-4 bg-[#FFF8E1] rounded-lg">
-                  <Leaf className="w-6 h-6 sm:w-8 sm:h-8 text-[#FFD233] mx-auto mb-2" />
-                  <div className="text-xs sm:text-sm text-[#4B2E2B] opacity-80">Chemical Free</div>
-                </div>
-              </div>
-
-              <Button 
-                onClick={() => navigate('/about')}
-                className="himalayan-gradient text-white"
-              >
-                Learn Our Story
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </div>
-
-            <div className="relative">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1713780131281-61ec701ebb6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmFkaXRpb25hbCUyMGNvb2tpbmclMjBtZXRob2RzfGVufDF8fHx8MTc1NzQ4NTM4Nnww&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="Traditional oil extraction"
-                className="w-full h-96 object-cover rounded-2xl shadow-lg"
-              />
-            </div>
-          </div>
-        </div>
+      <main className="relative mx-auto flex max-w-6xl flex-col items-center justify-center gap-10 px-6 py-16 md:flex-row md:gap-12">
+      {/* Product section */}
+      <section className="relative flex w-full items-center justify-center md:w-1/2">
+        <img
+          src="https://i.ibb.co/SqXfTrW/61l62-OYN9-DL-SL1000-removebg-preview.png"
+          alt="Mazola Oil Bottles"
+          width={700}
+          height={600}
+          priority
+          className="h-auto w-4/5 max-w-[420px]"
+        />
       </section>
+
+      {/* Text section */}
+      <section className="relative w-full md:w-1/2">
+        {/* Watermark background text */}
+        <h2
+          className="pointer-events-none select-none absolute -top-8 left-0 -z-10 
+                     text-6xl font-extrabold leading-none text-neutral-100 
+                     md:-top-10 md:text-8xl"
+          aria-hidden
+        >
+          Cooking Oil
+        </h2>
+
+        <p className="mt-24 text-sm leading-7 text-neutral-600 md:mt-28 md:max-w-[520px]">
+          Experience delicious cooking every time and more with Mazola Heart-Healthy™️
+          cooking spray and oils. You can help improve heart health and reduce cholesterol
+          levels by replacing butter, margarine, or oils higher in saturated fat.
+        </p>
+
+        <button
+          className="mt-5 inline-flex items-center rounded-full bg-emerald-700 px-6 py-3 
+                     text-sm font-medium text-white transition hover:bg-emerald-800 focus:outline-none 
+                     focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
+          type="button"
+        >
+          Learn More
+        </button>
+      </section>
+    </main>
+
 
       {/* Featured Products */}
       <section className="py-16 bg-[#FFF8E1]">
