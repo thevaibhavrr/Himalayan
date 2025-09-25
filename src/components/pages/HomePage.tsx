@@ -3,6 +3,8 @@ import ProductShowcase from '../home/produdtdata';
 import { useRouter } from '../Router';
 import OurProductPage from '../home/ourproduct';
 import PhilosophyPage from '../home/homeproduct';
+import LatestUpdates from '../home/latestupdate';
+import BrandStory from '../home/BrandStory';
 
 const HomePage = () => {
   const { navigate } = useRouter();
@@ -38,7 +40,8 @@ const HomePage = () => {
       <ProductShowcase />
       <OurProductPage/>
       <PhilosophyPage/>
-
+      <LatestUpdates/>
+      <BrandStory/>
 
 
 
