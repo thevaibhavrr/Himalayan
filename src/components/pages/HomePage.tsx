@@ -2,6 +2,7 @@ import Hero from '../Hero';
 import ProductShowcase from '../home/produdtdata';
 import { useRouter } from '../Router';
 import OurProductPage from '../home/ourproduct';
+import PhilosophyPage from '../home/homeproduct';
 
 const HomePage = () => {
   const { navigate } = useRouter();
@@ -36,6 +37,7 @@ const HomePage = () => {
       <Hero />
       <ProductShowcase />
       <OurProductPage/>
+      <PhilosophyPage/>
 
 
 
