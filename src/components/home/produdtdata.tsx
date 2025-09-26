@@ -1,19 +1,23 @@
+
 "use client";
 
 import React from "react";
 
 export default function HomePage() {
   return (
-    <main className="relative mx-auto flex max-w-7xl flex-col items-center justify-center gap-8 px-4 py-12 sm:px-6 sm:py-16 md:flex-row md:gap-12 lg:gap-16 lg:px-8 lg:py-20 xl:max-w-10xl">
+    <main className="relative mx-auto flex max-w-8xl h-200 flex-col items-center justify-center gap-8 px-4 py-12 sm:px-6 sm:py-16 md:flex-row md:gap-12 lg:gap-16 lg:px-8 lg:py-20 xl:max-w-10xl">
+      {/* Dark Green Circle */}
+      <div className="absolute -top-15 -left-20 w-50 h-50 bg-green-800 rounded-full z-0"></div>
+
       {/* Product section */}
       <section className="relative flex w-full items-center justify-center md:w-1/2">
         <img
           src="https://i.ibb.co/SqXfTrW/61l62-OYN9-DL-SL1000-removebg-preview.png"
           alt="Mazola Oil Bottles"
-          width={700}
-          height={600}
+          width={900}
+          height={900}
           priority
-          className="h-auto w-full max-w-[280px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[450px] xl:max-w-[500px]"
+          className="h-auto w-full max-w-[280px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[550px] xl:max-w-[600px]"
         />
       </section>
 

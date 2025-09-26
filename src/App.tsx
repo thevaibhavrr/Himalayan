@@ -14,7 +14,7 @@ export default function App() {
   return (
     <RouterProvider>
       <div className="min-h-screen bg-white">
-        
+        <Header />
         <main>
           <Route path="/">
             <HomePage />

@@ -43,8 +43,8 @@ export default function HomePage() {
             src="https://i.ibb.co/SqXfTrW/61l62-OYN9-DL-SL1000-removebg-preview.png"
             alt="Mazola Corn Oil"
             className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto"
-            width={500}
-            height={600}
+            width={800}
+            height={900}
           />
         </div>
       </section>
