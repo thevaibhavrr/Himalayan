@@ -5,6 +5,7 @@ import OurProductPage from '../home/ourproduct';
 import PhilosophyPage from '../home/homeproduct';
 import LatestUpdates from '../home/latestupdate';
 import BrandStory from '../home/BrandStory';
+import React from 'react';
 
 const HomePage = () => {
   const { navigate } = useRouter();

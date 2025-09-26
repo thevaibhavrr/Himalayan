@@ -1,6 +1,5 @@
 import React from 'react';
 import { RouterProvider, Route } from './components/Router';
-import AnnouncementBar from './components/AnnouncementBar';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './components/pages/HomePage';
@@ -15,14 +14,7 @@ export default function App() {
   return (
     <RouterProvider>
       <div className="min-h-screen bg-white">
-        <AnnouncementBar
-          phone="+91 9876543210"
-          email="info@himalayanoil.com"
-          facebook="https://facebook.com/YourPage"
-          instagram="https://instagram.com/YourPage"
-          linkedin="https://linkedin.com/company/YourPage"
-        />
-        <Header phone="+91 9876543210" email="info@himalayanoil.com" />
+        
         <main>
           <Route path="/">
             <HomePage />
