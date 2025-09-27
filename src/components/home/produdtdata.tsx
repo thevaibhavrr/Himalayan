@@ -3,11 +3,12 @@
 
 import React from "react";
 
-export default function HomePage() {
+export default function ProductShowcase() {
   return (
     <main className="relative mx-auto flex max-w-8xl h-200 flex-col items-center justify-center gap-8 px-4 py-12 sm:px-6 sm:py-16 md:flex-row md:gap-12 lg:gap-16 lg:px-8 lg:py-20 xl:max-w-10xl">
       {/* Dark Green Circle */}
       <div className="absolute -top-15 -left-20 w-50 h-50 bg-green-800 rounded-full z-0"></div>
+      <div className="absolute top-8 left-15 w-100 h-50 bg-white-800 z-0 text-4xl font-extrabold leading-none text-black ">Heart-Healthy</div>
 
       {/* Product section */}
       <section className="relative flex w-full items-center justify-center md:w-1/2">

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-export default function HomePage() {
+export default function Hero() {
   return (
     <div className="relative min-h-screen bg-white">
       {/* Hero Section */}
