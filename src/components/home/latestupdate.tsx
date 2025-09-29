@@ -25,21 +25,13 @@ const updates = [
     title: "Update Title 1",
     desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP7Q2w9s3xsz0KWsYVlXKlROC9qH7JJDH2BQ&s",
-  },
-  {
-    id: 5,
-    title: "Update Title 1",
-    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP7Q2w9s3xsz0KWsYVlXKlROC9qH7JJDH2BQ&s",
-  },
+  }
 
-
-  // ... other items
 ];
 
 export default function LatestUpdates() {
   return (
-    <section className="py-8 sm:py-12 md:py-16 px-4">
+    <section className="py-8 sm:py-12 md:py-16 px-10">
       <div className="text-center mb-8 sm:mb-10 md:mb-12">
         <h2 className="text-2xl sm:text-3xl font-bold">Our Latest Updates</h2>
       </div>

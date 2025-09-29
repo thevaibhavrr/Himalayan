@@ -10,6 +10,7 @@ import DistributorPage from './components/pages/DistributorPage';
 import Certifications from './components/Certifications';
 import ContactPage from './components/pages/ContactPage';
 
+
 export default function App() {
   return (
     <RouterProvider>
