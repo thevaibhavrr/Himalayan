@@ -8,7 +8,7 @@ export default function PhilosophyPage() {
   return (
     <section className="relative flex flex-col md:flex-row items-center justify-center py-12 px-4 min-h-[400px] sm:min-h-[500px] md:min-h-[600px]" 
              style={{
-               background: "linear-gradient(to right, white 20%, yellow 0%)"
+               background: "linear-gradient(to right, white 25%, yellow 0%)"
              }}>
       <div className="absolute -top-15 -left-20 w-50 h-50 bg-green-800 rounded-full z-0"></div>
       <div className="absolute top-8 left-15 w-100 h-50 bg-white-800 z-0 text-2xl sm:text-3xl md:text-4xl font-extrabold leading-none text-black">A Fov of Our</div>
@@ -16,7 +16,7 @@ export default function PhilosophyPage() {
       <div className="relative flex flex-col md:flex-row max-w-6xl items-center gap-8 w-full">
         <div className="relative flex-shrink-0 z-10 w-full md:w-auto flex justify-center" 
              style={{ marginLeft: "0", marginTop: "-20px" }}>
-          <div className="w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px]">
+          <div className="w-full max-w-[200px] sm:max-w-[250px] md:max-w-[400px]">
             <img
               src="https://static.vecteezy.com/system/resources/thumbnails/021/333/207/small/white-plate-with-food-isolated-on-a-transparent-background-png.png"
               alt="Food"
