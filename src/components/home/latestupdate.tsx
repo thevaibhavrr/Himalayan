@@ -33,27 +33,35 @@ export default function LatestUpdates() {
   return (
     <section className="py-8 sm:py-12 md:py-16 px-10">
       <div className="text-center mb-8 sm:mb-10 md:mb-12">
-        <h2 className="text-2xl sm:text-3xl font-bold">Our Latest Updates</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold">
+          Our Latest Updates
+        </h2>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6 max-w-8xl mx-auto">
         {updates.map((item) => (
           <div
             key={item.id}
-            className="relative group overflow-hidden rounded-lg shadow-lg"
+            className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
             <img
               src={item.img}
               alt={item.title}
               width={600}
               height={600}
-              className="object-cover w-full h-64 sm:h-80 md:h-96 group-hover:scale-110 transition-transform duration-500"
+              className="object-cover w-full h-64 sm:h-80 md:h-96 group-hover:scale-105 transition-transform duration-300"
             />
 
-            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-3 sm:p-4">
-              <h3 className="text-white font-semibold text-base sm:text-lg">{item.title}</h3>
-              <p className="text-gray-200 text-xs sm:text-sm mt-2">{item.desc}</p>
-              <button className="mt-2 sm:mt-3 px-3 py-1.5 sm:px-4 sm:py-2 bg-green-600 text-white rounded-md text-xs sm:text-sm hover:bg-green-700 transition">
+            <div className="absolute inset-0 bg-black/70 flex flex-col justify-end p-3 sm:p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <h3 className="text-white font-semibold text-base sm:text-lg">
+                {item.title}
+              </h3>
+              
+              <p className="text-gray-200 text-xs sm:text-sm mt-2">
+                {item.desc}
+              </p>
+              
+              <button className="mt-2 sm:mt-3 px-3 py-1.5 sm:px-4 sm:py-2 bg-green-600 text-white rounded-md text-xs sm:text-sm hover:bg-green-700 transition-colors duration-200">
                 Read More
               </button>
             </div>
@@ -62,7 +70,7 @@ export default function LatestUpdates() {
       </div>
 
       <div className="text-center mt-8 sm:mt-10">
-        <button className="px-4 py-2 sm:px-6 sm:py-2 bg-green-600 text-white rounded-md font-medium hover:bg-green-700 transition text-sm sm:text-base">
+        <button className="px-4 py-2 sm:px-6 sm:py-2 bg-green-600 text-white rounded-md font-medium text-sm sm:text-base hover:bg-green-700 transition-colors duration-200">
           View All
         </button>
       </div>

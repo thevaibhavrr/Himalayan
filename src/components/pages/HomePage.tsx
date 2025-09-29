@@ -6,6 +6,7 @@ import PhilosophyPage from '../home/homeproduct';
 import LatestUpdates from '../home/latestupdate';
 import BrandStory from '../home/BrandStory';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const HomePage = () => {
   const { navigate } = useRouter();
@@ -34,25 +35,139 @@ const HomePage = () => {
     }
   ];
 
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+        delayChildren: 0.2
+      }
+    }
+  };
+
+  const sectionVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 50,
+      scale: 0.95
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+        type: "spring",
+        stiffness: 100
+      }
+    }
+  };
+
+  const slideInVariants = {
+    hidden: { 
+      opacity: 0, 
+      x: -100
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  const slideInRightVariants = {
+    hidden: { 
+      opacity: 0, 
+      x: 100
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  const scaleInVariants = {
+    hidden: { 
+      opacity: 0, 
+      scale: 0.8
+    },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-white">
+    <motion.div 
+      className="min-h-screen bg-white"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
       {/* Hero Section */}
-      <Hero />
-      <ProductShowcase />
-      <OurProductPage/>
-      <PhilosophyPage/>
-      <LatestUpdates/>
-      <BrandStory/>
+      <motion.div variants={sectionVariants}>
+        <Hero />
+      </motion.div>
 
+      {/* Product Showcase Section */}
+      <motion.div 
+        variants={scaleInVariants}
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.3 }}
+      >
+        <ProductShowcase />
+      </motion.div>
 
+      {/* Our Products Section */}
+      <motion.div 
+        variants={slideInVariants}
+        whileHover={{ x: 10 }}
+        transition={{ duration: 0.3 }}
+      >
+        <OurProductPage/>
+      </motion.div>
 
+      {/* Philosophy Section */}
+      <motion.div 
+        variants={slideInRightVariants}
+        whileHover={{ x: -10 }}
+        transition={{ duration: 0.3 }}
+      >
+        <PhilosophyPage/>
+      </motion.div>
 
+      {/* Latest Updates Section */}
+      <motion.div 
+        variants={sectionVariants}
+        whileHover={{ y: -5 }}
+        transition={{ duration: 0.3 }}
+      >
+        <LatestUpdates/>
+      </motion.div>
 
-
-
-
-
-    </div>
+      {/* Brand Story Section */}
+      <motion.div 
+        variants={sectionVariants}
+        whileHover={{ scale: 1.01 }}
+        transition={{ duration: 0.3 }}
+      >
+        <BrandStory/>
+      </motion.div>
+    </motion.div>
   );
 };
 
