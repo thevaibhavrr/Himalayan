@@ -114,59 +114,13 @@ const HomePage = () => {
   return (
     <motion.div 
       className="min-h-screen bg-white"
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
     >
-      {/* Hero Section */}
-      <motion.div variants={sectionVariants}>
         <Hero />
-      </motion.div>
-
-      {/* Product Showcase Section */}
-      <motion.div 
-        variants={scaleInVariants}
-        whileHover={{ scale: 1.02 }}
-        transition={{ duration: 0.3 }}
-      >
         <ProductShowcase />
-      </motion.div>
-
-      {/* Our Products Section */}
-      <motion.div 
-        variants={slideInVariants}
-        whileHover={{ x: 10 }}
-        transition={{ duration: 0.3 }}
-      >
         <OurProductPage/>
-      </motion.div>
-
-      {/* Philosophy Section */}
-      <motion.div 
-        variants={slideInRightVariants}
-        whileHover={{ x: -10 }}
-        transition={{ duration: 0.3 }}
-      >
         <PhilosophyPage/>
-      </motion.div>
-
-      {/* Latest Updates Section */}
-      <motion.div 
-        variants={sectionVariants}
-        whileHover={{ y: -5 }}
-        transition={{ duration: 0.3 }}
-      >
         <LatestUpdates/>
-      </motion.div>
-
-      {/* Brand Story Section */}
-      <motion.div 
-        variants={sectionVariants}
-        whileHover={{ scale: 1.01 }}
-        transition={{ duration: 0.3 }}
-      >
         <BrandStory/>
-      </motion.div>
     </motion.div>
   );
 };

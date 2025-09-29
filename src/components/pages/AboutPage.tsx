@@ -114,9 +114,10 @@ const AboutPage = () => {
               </h2>
               <div className="space-y-6">
                 <p className="text-lg text-[#4B2E2B] opacity-80 leading-relaxed">
-                  Since 1978, Himalayan Oil has been a trusted name in the edible oil industry, 
-                  dedicated to purity, quality, and health. What started as a small traditional 
-                  oil extraction unit has grown into one of India's most trusted oil brands.
+                  We are a trusted name in the edible oil industry, dedicated to delivering purity, 
+                  quality, and health in every drop. With our brand, we strive to bring premium-grade 
+                  oils to households, hotels, and businesses, ensuring unmatched freshness through 
+                  advanced packaging solutions.
                 </p>
                 <p className="text-lg text-[#4B2E2B] opacity-80 leading-relaxed">
                   Our commitment to traditional Kolhu extraction methods, combined with modern 
@@ -125,8 +126,8 @@ const AboutPage = () => {
                 </p>
                 <p className="text-lg text-[#4B2E2B] opacity-80 leading-relaxed">
                   Today, we serve thousands of families across UP, Bihar, Delhi, and Haryana, 
-                  while expanding our reach through online platforms to bring premium-quality 
-                  oils to homes nationwide.
+                  while expanding our reach through online platforms like Amazon, Jiomart, and 
+                  Blinkit to bring premium-quality oils to homes nationwide.
                 </p>
               </div>
             </div>
@@ -167,9 +168,7 @@ const AboutPage = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-lg text-[#4B2E2B] opacity-80 leading-relaxed">
-                  To deliver superior-quality edible oils that meet the highest standards of 
-                  purity, health, and safety, while delighting customers with excellent 
-                  packaging and reliable service.
+                  Our mission is to produce and deliver superior-quality edible oils that meet the highest standards of purity, health, and safety. We aim to delight customers through excellent packaging, reliable service, and consistent commitment to their nutritional needs.
                 </p>
                 <ul className="space-y-2">
                   {[
@@ -198,9 +197,7 @@ const AboutPage = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-lg text-[#4B2E2B] opacity-80 leading-relaxed">
-                  To become a globally recognized edible oil brand known for trust, innovation, 
-                  and premium quality while setting new benchmarks in customer satisfaction 
-                  and health-focused products.
+                  Our vision is to be a leading edible oil brand recognized globally for quality, trust, and innovation. We aspire to set new benchmarks in customer satisfaction and health-focused products while continuously enhancing our processes, packaging, and services.
                 </p>
                 <ul className="space-y-2">
                   {[

@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Mail, Phone, MapPin, Award } from 'lucide-react';
+import { Facebook, Instagram, Mail, Phone, MapPin, Award, MessageCircle } from 'lucide-react';
 import { useRouter } from './Router';
 
 const Footer = () => {
@@ -8,10 +8,15 @@ const Footer = () => {
   const quickLinks = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
-    { name: 'Products', path: '/products' },
+    { name: 'Our Products', path: '/products' },
+    { name: 'Health Benefits', path: '/health-benefits' },
     { name: 'Recipes', path: '/recipes' },
-    { name: 'Distributor', path: '/distributor' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'Infrastructure', path: '/infrastructure' },
+    { name: 'Certifications', path: '/certifications' },
+    { name: 'Distribution Network', path: '/distribution' },
+    { name: 'Become a Distributor', path: '/distributor' },
+    { name: 'Blog / News', path: '/blog' },
+    { name: 'Contact Us', path: '/contact' }
   ];
 
   const productLinks = [
@@ -50,14 +55,18 @@ const Footer = () => {
               <h4 className="text-sm font-medium text-[#FFD233]">Follow Us</h4>
               <div className="flex gap-3">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/bharatagrooil"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-[#FFD233] rounded-full flex items-center justify-center hover:bg-[#FFE680] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#FFE680] focus:ring-offset-2 focus:ring-offset-[#4B2E2B]"
                   aria-label="Follow us on Facebook"
                 >
                   <Facebook className="w-5 h-5 text-[#4B2E2B]" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/bharatagrooil/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-[#FFD233] rounded-full flex items-center justify-center hover:bg-[#FFE680] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#FFE680] focus:ring-offset-2 focus:ring-offset-[#4B2E2B]"
                   aria-label="Follow us on Instagram"
                 >
@@ -108,29 +117,40 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-[#FFD233] mt-1 flex-shrink-0" />
                 <div className="text-sm text-gray-300 leading-relaxed">
-                  <p>Industrial Area, Sector-2</p>
-                  <p>Greater Noida, UP 201310</p>
-                  <p>India</p>
+                  <p>Khasra No. 118 & 120, Sikeda Road</p>
+                  <p>Industrial Area, Modinagar 201204</p>
+                  <p>Distt. GZB, UP, India</p>
                 </div>
               </div>
               
               <div className="space-y-3">
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919219450111"
                   className="flex items-center gap-3 hover:text-[#FFD233] transition-colors duration-200 focus:outline-none focus:text-[#FFD233] group"
-                  aria-label="Call us at +91 9876543210"
+                  aria-label="Call us at +91 9219450111"
                 >
                   <Phone className="w-4 h-4 text-[#FFD233] group-hover:scale-110 transition-transform duration-200" />
-                  <span className="text-sm text-gray-300 group-hover:text-[#FFD233]">+91 9876543210</span>
+                  <span className="text-sm text-gray-300 group-hover:text-[#FFD233]">+91 9219450111</span>
                 </a>
                 
                 <a
-                  href="mailto:info@himalayanoil.com"
+                  href="mailto:bharatagrooil@yahoo.in"
                   className="flex items-center gap-3 hover:text-[#FFD233] transition-colors duration-200 focus:outline-none focus:text-[#FFD233] group"
-                  aria-label="Email us at info@himalayanoil.com"
+                  aria-label="Email us at bharatagrooil@yahoo.in"
                 >
                   <Mail className="w-4 h-4 text-[#FFD233] group-hover:scale-110 transition-transform duration-200" />
-                  <span className="text-sm text-gray-300 group-hover:text-[#FFD233]">info@himalayanoil.com</span>
+                  <span className="text-sm text-gray-300 group-hover:text-[#FFD233]">bharatagrooil@yahoo.in</span>
+                </a>
+                
+                <a
+                  href="https://wa.me/919219450111"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 hover:text-[#FFD233] transition-colors duration-200 focus:outline-none focus:text-[#FFD233] group"
+                  aria-label="WhatsApp us at +91 9219450111"
+                >
+                  <MessageCircle className="w-4 h-4 text-[#FFD233] group-hover:scale-110 transition-transform duration-200" />
+                  <span className="text-sm text-gray-300 group-hover:text-[#FFD233]">WhatsApp: +91 9219450111</span>
                 </a>
               </div>
             </div>
@@ -140,7 +160,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-600 mt-8 pt-4">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-2 lg:gap-4 text-center lg:text-left text-sm text-gray-400">
-            <p>© {currentYear} Himalayan Oil Industries. All rights reserved.</p>
+            <p>© 2025 Bharat Agro Oil Pvt Ltd. All rights reserved.</p>
             <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 mt-2 lg:mt-0">
               <span className="font-medium">FSSAI License: 10017051002014</span>
               <span className="hidden sm:inline">•</span>
@@ -158,6 +178,8 @@ const Footer = () => {
                 >
                   Terms & Conditions
                 </button>
+                <span>•</span>
+                <span className="text-xs text-gray-500">Created by Pitamaas Pvt Ltd</span>
               </div>
             </div>
           </div>

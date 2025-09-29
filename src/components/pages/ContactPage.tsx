@@ -37,9 +37,9 @@ const ContactPage = () => {
       icon: <Phone className="w-8 h-8 text-[#FFD233]" />,
       title: "Call Us",
       details: [
-        "Sales: +91 9876543210",
-        "Office: +91 120-4567890", 
-        "Toll Free: 1800-123-4567"
+        "Sales: +91 9219450111",
+        "Customer Care: +91 9219450111", 
+        "WhatsApp: +91 9219450111"
       ],
       description: "Speak directly with our sales team"
     },
@@ -47,9 +47,9 @@ const ContactPage = () => {
       icon: <Mail className="w-8 h-8 text-[#FFD233]" />,
       title: "Email Us",
       details: [
-        "info@himalayanoil.com",
-        "sales@himalayanoil.com",
-        "support@himalayanoil.com"
+        "bharatagrooil@yahoo.in",
+        "info@bharatagrooil.com",
+        "sales@bharatagrooil.com"
       ],
       description: "Send us your queries and feedback"
     },
@@ -57,7 +57,7 @@ const ContactPage = () => {
       icon: <MessageCircle className="w-8 h-8 text-[#FFD233]" />,
       title: "WhatsApp",
       details: [
-        "+91 9876543210",
+        "+91 9219450111",
         "Available 9 AM - 6 PM",
         "Monday - Saturday"
       ],
@@ -67,9 +67,9 @@ const ContactPage = () => {
       icon: <MapPin className="w-8 h-8 text-[#FFD233]" />,
       title: "Visit Us",
       details: [
-        "Industrial Area, Sector-2",
-        "Greater Noida, UP 201310",
-        "India"
+        "Khasra No. 118 & 120, Sikeda Road",
+        "Industrial Area, Modinagar 201204",
+        "Distt. GZB, UP, India"
       ],
       description: "Visit our manufacturing facility"
     }
@@ -379,10 +379,10 @@ const ContactPage = () => {
                     <div>
                       <h4 className="text-[#4B2E2B] font-medium mb-2">Manufacturing Unit</h4>
                       <p className="text-sm text-[#4B2E2B] opacity-80 leading-relaxed">
-                        Himalayan Oil Industries<br />
-                        Plot No. 45, Industrial Area<br />
-                        Sector-2, Greater Noida<br />
-                        Uttar Pradesh - 201310<br />
+                        Bharat Agro Oil Pvt Ltd<br />
+                        Khasra No. 118 & 120, Sikeda Road<br />
+                        Industrial Area, Modinagar 201204<br />
+                        Distt. GZB, UP<br />
                         India
                       </p>
                     </div>
@@ -445,10 +445,17 @@ const ContactPage = () => {
             we're here to help with all your questions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-[#4B2E2B] hover:bg-gray-100 px-8 py-6">
-              Call Now: +91 9876543210
+            <Button 
+              onClick={() => window.open('tel:+919219450111')}
+              className="bg-white text-[#4B2E2B] hover:bg-gray-100 px-8 py-6"
+            >
+              Call Now: +91 9219450111
             </Button>
-            <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#4B2E2B] px-8 py-6">
+            <Button 
+              onClick={() => window.open('https://wa.me/919219450111', '_blank')}
+              variant="outline" 
+              className="border-2 border-white text-white hover:bg-white hover:text-[#4B2E2B] px-8 py-6"
+            >
               WhatsApp Us
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>

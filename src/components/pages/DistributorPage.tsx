@@ -473,7 +473,7 @@ const DistributorPage = () => {
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
             <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#4B2E2B] px-8 py-6">
-              Call Us: +91 9876543210
+              Call Us: +91 9219450111
             </Button>
           </div>
         </div>
